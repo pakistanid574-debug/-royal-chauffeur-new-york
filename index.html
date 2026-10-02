@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Chauffeur New York | Luxury Car Service & NYC Airport Transfers</title>
+    <meta name="description" content="Book Royal Chauffeur New York for premier luxury car service, JFK airport transfers, and private executive drivers across Manhattan and NYC. Contact: royalchauffeurnewyork@gmail.com">
+    <meta name="keywords" content="Royal Chauffeur New York, NYC private chauffeur, luxury car service Manhattan, JFK airport transfer chauffeur, LGA car service, Newark airport private driver">
+    <link rel="canonical" href="https://royalchauffeurnewyork.com/">
+    
+    <!-- Google Site Verification Tag -->
+    <meta name="google-site-verification" content="wW4m5b7KbD3Z9ynUrxpP91Aeqp1Xfr0AosS4BQQxU14" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Advanced Local Business Schema for NYC SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LimousineService",
+      "name": "Royal Chauffeur New York",
+      "image": "https://images.unsplash.com/photo-1485081669461-b36c9529696e",
+      "email": "royalchauffeurnewyork@gmail.com",
+      "currenciesAccepted": "USD",
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "addressCountry": "US"
+      },
+      "description": "Top-rated luxury private chauffeur and airport transfer service across New York City and Manhattan."
+    }
+    </script>
+
+    <!-- Google FAQPage Schema for Rich Snippets & Voice Search SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "How do I book a private chauffeur in New York?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can easily book or request a custom itinerary by emailing our 24/7 concierge desk directly at royalchauffeurnewyork@gmail.com or by filling out our online booking inquiry form."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Do you track flights for JFK, LGA, and Newark arrivals?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, all our airport transfers include live flight tracking. Our professional chauffeurs monitor your flight status in real-time to adjust for early arrivals or delays."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What vehicles are available in your luxury fleet?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our elite fleet features late-model Mercedes-Benz S-Class executive sedans, Cadillac Escalade ESV luxury SUVs, and Mercedes-Benz Sprinter vans for group and VIP transit."
+        }
+      }]
+    }
+    </script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        'gold-light': '#F3E5AB',
+                        'gold-dark': '#AA8C2C',
+                        dark: '#0A0A0A',
+                        'dark-card': '#141414',
+                        'dark-border': '#262626'
+                    },
+                    fontFamily: {
+                        playfair: ['Playfair Display', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark text-gray-200 font-sans antialiased selection:bg-gold selection:text-black">
+
+    <!-- Header / Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-dark/90 backdrop-blur-md border-b border-dark-border">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" onclick="switchTab('home')" class="font-playfair text-xl md:text-2xl font-bold tracking-wider text-gold uppercase">
+                Royal Chauffeur <span class="text-white font-light text-sm block tracking-widest">New York</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide uppercase">
+                <button onclick="switchTab('home')" class="nav-link text-gold transition hover:text-gold-light" id="nav-home">Home</button>
+                <button onclick="switchTab('fleet')" class="nav-link text-gray-300 transition hover:text-gold" id="nav-fleet">Fleet & Services</button>
+                <button onclick="switchTab('about')" class="nav-link text-gray-300 transition hover:text-gold" id="nav-about">About Us</button>
+                <button onclick="switchTab('blog')" class="nav-link text-gray-300 transition hover:text-gold" id="nav-blog">Journal & SEO Blog</button>
+                <button onclick="switchTab('contact')" class="nav-link text-gray-300 transition hover:text-gold" id="nav-contact">Contact</button>
+            </nav>
+
+            <div>
+                <button onclick="switchTab('contact')" class="hidden lg:inline-block bg-gold hover:bg-gold-light text-black font-semibold px-6 py-2.5 rounded text-xs uppercase tracking-widest transition shadow-lg shadow-gold/20">
+                    Book Ride
+                </button>
+                <button onclick="toggleMobileMenu()" class="md:hidden text-gold focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-dark-card border-b border-dark-border px-6 py-4 space-y-3">
+            <button onclick="switchTab('home'); toggleMobileMenu();" class="block w-full text-left py-2 text-gold font-medium uppercase text-sm">Home</button>
+            <button onclick="switchTab('fleet'); toggleMobileMenu();" class="block w-full text-left py-2 text-gray-300 font-medium uppercase text-sm">Fleet & Services</button>
+            <button onclick="switchTab('about'); toggleMobileMenu();" class="block w-full text-left py-2 text-gray-300 font-medium uppercase text-sm">About Us</button>
+            <button onclick="switchTab('blog'); toggleMobileMenu();" class="block w-full text-left py-2 text-gray-300 font-medium uppercase text-sm">Journal & SEO Blog</button>
+            <button onclick="switchTab('contact'); toggleMobileMenu();" class="block w-full text-left py-2 text-gray-300 font-medium uppercase text-sm">Contact</button>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main>
+
+        <!-- 1. HOME TAB -->
+        <section id="tab-home" class="tab-content">
+            <!-- Hero -->
+            <div class="relative h-[85vh] flex items-center justify-center text-center px-6 bg-cover bg-center" style="background-image: linear-gradient(to bottom, rgba(10,10,10,0.6), rgba(10,10,10,0.9)), url('https://images.unsplash.com/photo-1485081669461-b36c9529696e?q=80&w=2670&auto=format&fit=crop');">
+                <div class="max-w-4xl mx-auto space-y-6">
+                    <span class="text-gold uppercase tracking-[0.3em] text-xs font-semibold bg-gold/10 px-4 py-1.5 rounded-full border border-gold/30">Premier NYC Executive Transport</span>
+                    <h1 class="font-playfair text-4xl md:text-6xl font-bold tracking-tight text-white leading-tight">
+                        Experience New York with <span class="text-gold">Royal Chauffeur</span>
+                    </h1>
+                    <p class="text-gray-300 text-base md:text-lg max-w-2xl mx-auto font-light">
+                        Immaculate luxury vehicles, elite private drivers, and flawless airport transfers across Manhattan, JFK, LGA, and EWR.
+                    </p>
+                    <div class="pt-4 flex flex-col sm:flex-row justify-center gap-4">
+                        <button onclick="switchTab('contact')" class="bg-gold hover:bg-gold-light text-black font-bold px-8 py-3.5 rounded text-sm uppercase tracking-widest transition shadow-xl shadow-gold/20">
+                            Request Inquiry
+                        </button>
+                        <button onclick="switchTab('fleet')" class="border border-gold/50 hover:bg-gold/10 text-white font-medium px-8 py-3.5 rounded text-sm uppercase tracking-widest transition">
+                            Explore Fleet
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Airport Tracking Banner -->
+            <div class="bg-dark-card border-y border-dark-border py-6 px-6">
+                <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-around text-center md:text-left gap-4 text-xs tracking-wider uppercase text-gray-400">
+                    <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-gold animate-pulse"></span> 24/7 Live Flight Monitoring</div>
+                    <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-gold animate-pulse"></span> JFK, LGA & Newark Airport Specialists</div>
+                    <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-gold animate-pulse"></span> Absolute Discretion & Confidentiality</div>
+                </div>
+            </div>
+
+            <!-- Highlights Grid -->
+            <div class="max-w-7xl mx-auto px-6 py-24">
+                <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                    <h2 class="font-playfair text-3xl font-bold text-white">The Royal Standard</h2>
+                    <p class="text-gray-400 text-sm">Uncompromising quality designed for corporate leaders, celebrities, and discerning travelers.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-dark-card border border-dark-border p-8 rounded-xl hover:border-gold/50 transition">
+                        <div class="w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center text-gold mb-6 font-bold text-xl">01</div>
+                        <h3 class="font-playfair text-xl font-bold text-white mb-3">Flight Tracking & Punctuality</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Live flight monitoring ensures your chauffeur is waiting precisely when you land at JFK, LaGuardia, or Newark without delays.</p>
+                    </div>
+                    <div class="bg-dark-card border border-dark-border p-8 rounded-xl hover:border-gold/50 transition">
+                        <div class="w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center text-gold mb-6 font-bold text-xl">02</div>
+                        <h3 class="font-playfair text-xl font-bold text-white mb-3">Absolute Discretion & Safety</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Professional, vetted chauffeurs committed to complete confidentiality and executive-level road safety across Manhattan.</p>
+                    </div>
+                    <div class="bg-dark-card border border-dark-border p-8 rounded-xl hover:border-gold/50 transition">
+                        <div class="w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center text-gold mb-6 font-bold text-xl">03</div>
+                        <h3 class="font-playfair text-xl font-bold text-white mb-3">Immaculate Luxury Fleet</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Late-model Mercedes-Benz S-Class, Cadillac Escalade ESV, and luxury sprinters meticulously sanitized for every ride.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Rate Estimator / Calculator Section -->
+            <div class="bg-dark-card border-t border-dark-border py-20 px-6">
+                <div class="max-w-4xl mx-auto bg-dark border border-gold/30 rounded-2xl p-8 md:p-12 shadow-2xl">
+                    <div class="text-center max-w-xl mx-auto mb-10 space-y-3">
+                        <span class="text-gold text-xs font-semibold uppercase tracking-widest">Instant Calculator</span>
+                        <h2 class="font-playfair text-3xl font-bold text-white">Estimate Your Transfer</h2>
+                        <p class="text-gray-400 text-sm">Select your service type to calculate approximate starting rates in New York.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2 font-medium">Service Type</label>
+                            <select id="calc-service" onchange="calculateRate()" class="w-full bg-dark-card border border-dark-border rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-gold transition">
+                                <option value="airport">Airport Transfer (JFK / LGA / EWR)</option>
+                                <option value="hourly">Hourly Disposal (Min. 3 Hours)</option>
+                                <option value="manhattan">Manhattan Point-to-Point</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2 font-medium">Vehicle Class</label>
+                            <select id="calc-vehicle" onchange="calculateRate()" class="w-full bg-dark-card border border-dark-border rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-gold transition">
+                                <option value="sedan">Mercedes-Benz S-Class (Sedan)</option>
+                                <option value="suv">Cadillac Escalade ESV (SUV)</option>
+                                <option value="sprinter">Mercedes Sprinter Van</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="bg-dark-card border border-gold/20 rounded-xl p-6 text-center space-y-2">
+                        <span class="text-xs uppercase tracking-wider text-gray-400">Estimated Starting Rate</span>
+                        <div id="calc-result" class="font-playfair text-3xl md:text-4xl font-bold text-gold">$150 - $220</div>
+                        <p class="text-xs text-gray-500">*Rates subject to change based on exact pickup locations, tolls, and gratuity. Email royalchauffeurnewyork@gmail.com for precise custom quotes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Client Testimonials Section -->
+            <div class="max-w-7xl mx-auto px-6 py-24">
+                <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                    <span class="text-gold text-xs font-semibold uppercase tracking-widest">Client Feedback</span>
+                    <h2 class="font-playfair text-3xl font-bold text-white">Trusted by Executives & VIPs</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-dark-card border border-dark-border p-8 rounded-xl space-y-4">
+                        <div class="text-gold text-lg">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="text-gray-300 text-sm italic">"Royal Chauffeur New York handled our corporate roadshow across Manhattan seamlessly. Immaculate Escalade and extremely professional drivers."</p>
+                        <div class="text-xs text-gold uppercase tracking-wider font-bold">— Marcus V., Financial Director</div>
+                    </div>
+                    <div class="bg-dark-card border border-dark-border p-8 rounded-xl space-y-4">
+                        <div class="text-gold text-lg">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="text-gray-300 text-sm italic">"My flight into JFK was delayed by two hours, but my chauffeur was waiting right on time as promised. Exceptional service!"</p>
+                        <div class="text-xs text-gold uppercase tracking-wider font-bold">— Sarah L., Tech Executive</div>
+                    </div>
+                    <div class="bg-dark-card border border-dark-border p-8 rounded-xl space-y-4">
+                        <div class="text-gold text-lg">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="text-gray-300 text-sm italic">"The absolute best way to travel in NYC. Clean vehicles, polite drivers, and straightforward booking via email."</p>
+                        <div class="text-xs text-gold uppercase tracking-wider font-bold">— David K., Private Investor</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. FLEET & SERVICES TAB -->
+        <section id="tab-fleet" class="tab-content hidden">
+            <div class="max-w-7xl mx-auto px-6 py-20">
+                <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                    <span class="text-gold text-xs font-semibold uppercase tracking-widest">Elite Options</span>
+                    <h2 class="font-playfair text-3xl md:text-4xl font-bold text-white">Our Fleet & Services</h2>
+                    <p class="text-gray-400 text-sm">Tailored transportation solutions for airports, corporate roadshows, and hourly disposal.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+                    <div class="bg-dark-card border border-dark-border rounded-xl overflow-hidden group">
+                        <div class="h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=800&auto=format&fit=crop" alt="Mercedes-Benz S-Class Royal Chauffeur New York" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <div class="flex justify-between items-center">
+                                <h3 class="font-playfair text-xl font-bold text-white">Mercedes-Benz S-Class</h3>
+                                <span class="text-xs text-gold bg-gold/10 px-2.5 py-1 rounded">Executive Sedan</span>
+                            </div>
+                            <p class="text-gray-400 text-xs">Max 3 Passengers | 2 Luggage Bags. The ultimate definition of first-class executive comfort.</p>
+                            <button onclick="switchTab('contact')" class="w-full bg-dark-border hover:bg-gold hover:text-black text-gold font-semibold py-2.5 rounded text-xs uppercase tracking-wider transition">Inquire Now</button>
+                        </div>
+                    </div>
+
+                    <div class="bg-dark-card border border-dark-border rounded-xl overflow-hidden group">
+                        <div class="h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=800&auto=format&fit=crop" alt="Cadillac Escalade ESV Royal Chauffeur New York" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <div class="flex justify-between items-center">
+                                <h3 class="font-playfair text-xl font-bold text-white">Cadillac Escalade ESV</h3>
+                                <span class="text-xs text-gold bg-gold/10 px-2.5 py-1 rounded">Luxury SUV</span>
+                            </div>
+                            <p class="text-gray-400 text-xs">Max 6 Passengers | 6 Luggage Bags. Unmatched spaciousness and commanding presence in NYC.</p>
+                            <button onclick="switchTab('contact')" class="w-full bg-dark-border hover:bg-gold hover:text-black text-gold font-semibold py-2.5 rounded text-xs uppercase tracking-wider transition">Inquire Now</button>
+                        </div>
+                    </div>
+
+                    <div class="bg-dark-card border border-dark-border rounded-xl overflow-hidden group">
+                        <div class="h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?q=80&w=800&auto=format&fit=crop" alt="Mercedes Sprinter Van Royal Chauffeur New York" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <div class="flex justify-between items-center">
+                                <h3 class="font-playfair text-xl font-bold text-white">Mercedes Sprinter Van</h3>
+                                <span class="text-xs text-gold bg-gold/10 px-2.5 py-1 rounded">Group / VIP Van</span>
+                            </div>
+                            <p class="text-gray-400 text-xs">Max 14 Passengers | 14 Luggage Bags. Perfect for corporate teams, delegations, and airport groups.</p>
+                            <button onclick="switchTab('contact')" class="w-full bg-dark-border hover:bg-gold hover:text-black text-gold font-semibold py-2.5 rounded text-xs uppercase tracking-wider transition">Inquire Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. ABOUT US TAB -->
+        <section id="tab-about" class="tab-content hidden">
+            <div class="max-w-7xl mx-auto px-6 py-20">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                        <span class="text-gold text-xs font-semibold uppercase tracking-widest">About Our Company</span>
+                        <h2 class="font-playfair text-3xl md:text-4xl font-bold text-white">The Pinnacle of NYC Private Transport</h2>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            At <strong class="text-gold">Royal Chauffeur New York</strong>, we redefine luxury mobility across Manhattan, Brooklyn, and all tri-state international airports. Our commitment is rooted in absolute discretion, immaculate fleet presentation, and professional chauffeurs who know every fast track and avenue of New York City.
+                        </p>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Whether you require timely airport transit, hourly disposal for business roadshows, or a dedicated private driver for high-profile events, we ensure your journey is effortless, secure, and supremely comfortable.
+                        </p>
+                        <div class="pt-4">
+                            <button onclick="switchTab('contact')" class="bg-gold hover:bg-gold-light text-black font-bold px-8 py-3.5 rounded text-xs uppercase tracking-widest transition">
+                                Contact Our Concierge
+                            </button>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=1000&auto=format&fit=crop" alt="Royal Chauffeur New York Luxury Experience" class="rounded-xl border border-gold/30 shadow-2xl w-full h-[400px] object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. BLOG / JOURNAL TAB & FAQ SECTION -->
+        <section id="tab-blog" class="tab-content hidden">
+            <div class="max-w-7xl mx-auto px-6 py-20">
+                <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                    <span class="text-gold text-xs font-semibold uppercase tracking-widest">Expert Insights</span>
+                    <h2 class="font-playfair text-3xl md:text-4xl font-bold text-white">NYC Travel & Chauffeur Journal</h2>
+                    <p class="text-gray-400 text-sm">Read our latest guides on airport transfers, Manhattan luxury hotspots, and executive travel tips.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
+                    <article class="bg-dark-card border border-dark-border rounded-xl overflow-hidden flex flex-col justify-between">
+                        <div class="p-6 space-y-4">
+                            <span class="text-xs text-gold font-semibold uppercase">Airport Guide</span>
+                            <h3 class="font-playfair text-xl font-bold text-white">JFK Airport Transfer: Beating Peak NYC Traffic</h3>
+                            <p class="text-gray-400 text-xs leading-relaxed">How professional private chauffeurs track live flights and navigate terminal congestion for seamless pickups at JFK.</p>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <button onclick="openBlogModal('JFK Airport Transfer: Beating Peak NYC Traffic', 'Navigating John F. Kennedy International Airport (JFK) during peak hours can be exceptionally demanding. With Royal Chauffeur New York, our experienced drivers monitor your flight status in real time, ensuring zero waiting time and a completely stress-free transition from baggage claim to your executive vehicle.')" class="text-gold text-xs font-bold uppercase tracking-wider hover:underline">Read Full Article &rarr;</button>
+                        </div>
+                    </article>
+
+                    <article class="bg-dark-card border border-dark-border rounded-xl overflow-hidden flex flex-col justify-between">
+                        <div class="p-6 space-y-4">
+                            <span class="text-xs text-gold font-semibold uppercase">Manhattan Lifestyle</span>
+                            <h3 class="font-playfair text-xl font-bold text-white">Top 5 Luxury Dining Spots in Manhattan</h3>
+                            <p class="text-gray-400 text-xs leading-relaxed">Discover Michelin-starred restaurants and private venues best visited with a dedicated hourly chauffeur service.</p>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <button onclick="openBlogModal('Top 5 Luxury Dining Spots in Manhattan', 'Manhattan hosts some of the world’s most prestigious culinary destinations. Arriving with Royal Chauffeur New York ensures door-to-door elegance, front-door drop-offs, and complete peace of mind while you enjoy your evening.')" class="text-gold text-xs font-bold uppercase tracking-wider hover:underline">Read Full Article &rarr;</button>
+                        </div>
+                    </article>
+
+                    <article class="bg-dark-card border border-dark-border rounded-xl overflow-hidden flex flex-col justify-between">
+                        <div class="p-6 space-y-4">
+                            <span class="text-xs text-gold font-semibold uppercase">Executive Travel</span>
+                            <h3 class="font-playfair text-xl font-bold text-white">Why Modern Executives Prefer Private Chauffeurs</h3>
+                            <p class="text-gray-400 text-xs leading-relaxed">Maximize your productivity, take calls securely, and travel across New York without worrying about parking or navigation.</p>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <button onclick="openBlogModal('Why Modern Executives Prefer Private Chauffeurs', 'In a fast-paced financial capital like New York, time is your most valuable asset. Corporate leaders choose Royal Chauffeur New York to transform transit time into a private mobile office environment.')" class="text-gold text-xs font-bold uppercase tracking-wider hover:underline">Read Full Article &rarr;</button>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- FAQ Section for SEO -->
+                <div class="max-w-4xl mx-auto bg-dark-card border border-dark-border rounded-2xl p-8 md:p-12">
+                    <div class="text-center mb-12 space-y-2">
+                        <span class="text-gold text-xs font-semibold uppercase tracking-widest">Common Questions</span>
+                        <h3 class="font-playfair text-2xl font-bold text-white">Frequently Asked Questions</h3>
+                    </div>
+                    <div class="space-y-6 text-sm">
+                        <div class="border-b border-dark-border pb-4">
+                            <h4 class="font-bold text-white mb-2">How do I book a private chauffeur in New York?</h4>
+                            <p class="text-gray-400">You can easily book or request a custom itinerary by emailing our 24/7 concierge desk directly at <a href="mailto:royalchauffeurnewyork@gmail.com" class="text-gold underline">royalchauffeurnewyork@gmail.com</a> or by using our online inquiry form.</p>
+                        </div>
+                        <div class="border-b border-dark-border pb-4">
+                            <h4 class="font-bold text-white mb-2">Do you track flights for JFK, LGA, and Newark arrivals?</h4>
+                            <p class="text-gray-400">Yes, all our airport transfers include live flight tracking. Our professional chauffeurs monitor your flight status in real-time to adjust for early arrivals or flight delays.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white mb-2">What vehicles are available in your luxury fleet?</h4>
+                            <p class="text-gray-400">Our elite fleet features late-model Mercedes-Benz S-Class executive sedans, Cadillac Escalade ESV luxury SUVs, and Mercedes-Benz Sprinter vans for group and VIP transit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. CONTACT TAB -->
+        <section id="tab-contact" class="tab-content hidden">
+            <div class="max-w-4xl mx-auto px-6 py-20">
+                <div class="bg-dark-card border border-gold/30 rounded-2xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-40 h-40 bg-gold/5 rounded-full blur-3xl pointer-events-none"></div>
+                    
+                    <div class="text-center max-w-xl mx-auto mb-10 space-y-3">
+                        <span class="text-gold text-xs font-semibold uppercase tracking-widest">Get In Touch</span>
+                        <h2 class="font-playfair text-3xl font-bold text-white">Book Your Private Ride</h2>
+                        <p class="text-gray-400 text-sm">Send your booking request or itinerary directly to our 24/7 concierge desk.</p>
+                    </div>
+
+                    <!-- Direct Email Display Box -->
+                    <div class="bg-dark border border-dark-border rounded-xl p-6 mb-8 text-center space-y-2">
+                        <span class="text-xs text-gray-400 uppercase tracking-wider block">Official Inquiries & Bookings Email</span>
+                        <a href="mailto:royalchauffeurnewyork@gmail.com" class="font-playfair text-lg md:text-2xl font-bold text-gold hover:underline">royalchauffeurnewyork@gmail.com</a>
+                    </div>
+
+                    <!-- Interactive Form -->
+                    <form onsubmit="handleFormSubmit(event)" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2 font-medium">Your Name</label>
+                                <input type="text" required placeholder="John Doe" class="w-full bg-dark border border-dark-border rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-gold transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2 font-medium">Your Email Address</label>
+                                <input type="email" required value="royalchauffeurnewyork@gmail.com" class="w-full bg-dark border border-dark-border rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-gold transition">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2 font-medium">Pickup Location / Airport</label>
+                                <input type="text" required placeholder="JFK Terminal 4 or Manhattan Hotel" class="w-full bg-dark border border-dark-border rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-gold transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2 font-medium">Vehicle Preference</label>
+                                <select class="w-full bg-dark border border-dark-border rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-gold transition">
+                                    <option>Mercedes-Benz S-Class</option>
+                                    <option>Cadillac Escalade ESV</option>
+                                    <option>Mercedes Sprinter Van</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2 font-medium">Itinerary & Special Requests</label>
+                            <textarea rows="4" placeholder="Date, time, flight number, drop-off destination..." class="w-full bg-dark border border-dark-border rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-gold transition"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-gold hover:bg-gold-light text-black font-bold py-4 rounded-lg text-xs uppercase tracking-widest transition shadow-xl shadow-gold/20">
+                            Submit Booking Inquiry
+                        </button>
+                    </form>
+                    
+                    <div id="form-success" class="hidden mt-6 p-4 bg-emerald-950/50 border border-emerald-500/50 rounded-lg text-emerald-400 text-center text-sm">
+                        Thank you! Your inquiry has been processed. Our team will contact you via email shortly.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Quick Action Button -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <a href="mailto:royalchauffeurnewyork@gmail.com" class="bg-gold hover:bg-gold-light text-black font-bold p-3.5 rounded-full shadow-2xl flex items-center justify-center transition hover:scale-110" title="Email Us">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+        </a>
+    </div>
+
+    <!-- Blog Read Modal -->
+    <div id="blog-modal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-6">
+        <div class="bg-dark-card border border-gold/30 rounded-2xl max-w-2xl w-full p-8 relative space-y-4">
+            <button onclick="closeBlogModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+            <span id="modal-category" class="text-xs text-gold uppercase font-semibold">Article</span>
+            <h3 id="modal-title" class="font-playfair text-2xl font-bold text-white"></h3>
+            <p id="modal-body" class="text-gray-300 text-sm leading-relaxed"></p>
+            <div class="pt-4 flex justify-end">
+                <button onclick="closeBlogModal(); switchTab('contact');" class="bg-gold text-black font-semibold px-6 py-2 rounded text-xs uppercase tracking-wider">Book Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark-card border-t border-dark-border py-12 px-6 text-center text-gray-400 text-xs space-y-4">
+        <div class="font-playfair text-gold text-lg tracking-wider uppercase font-bold">Royal Chauffeur New York</div>
+        <p>Official Contact Email: <a href="mailto:royalchauffeurnewyork@gmail.com" class="text-white hover:text-gold underline">royalchauffeurnewyork@gmail.com</a></p>
+        <p>&copy; 2026 Royal Chauffeur New York. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function switchTab(tabId) {
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.classList.add('hidden'));
+            
+            const target = document.getElementById('tab-' + tabId);
+            if(target) target.classList.remove('hidden');
+            
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => link.classList.remove('text-gold'));
+            navLinks.forEach(link => link.classList.add('text-gray-300'));
+            
+            const activeNav = document.getElementById('nav-' + tabId);
+            if(activeNav) {
+                activeNav.classList.remove('text-gray-300');
+                activeNav.classList.add('text-gold');
+            }
+            
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        function calculateRate() {
+            const service = document.getElementById('calc-service').value;
+            const vehicle = document.getElementById('calc-vehicle').value;
+            let base = 150;
+            
+            if(service === 'airport') base = vehicle === 'sedan' ? 150 : vehicle === 'suv' ? 195 : 280;
+            else if(service === 'hourly') base = vehicle === 'sedan' ? 360 : vehicle === 'suv' ? 450 : 650;
+            else if(service === 'manhattan') base = vehicle === 'sedan' ? 120 : vehicle === 'suv' ? 160 : 240;
+            
+            document.getElementById('calc-result').innerText = `$${base} - $${base + 70}`;
+        }
+
+        function openBlogModal(title, body) {
+            document.getElementById('modal-title').innerText = title;
+            document.getElementById('modal-body').innerText = body;
+            document.getElementById('blog-modal').classList.remove('hidden');
+        }
+
+        function closeBlogModal() {
+            document.getElementById('blog-modal').classList.add('hidden');
+        }
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            document.getElementById('form-success').classList.remove('hidden');
+            setTimeout(() => {
+                document.getElementById('form-success').classList.add('hidden');
+            }, 6000);
+        }
+    </script>
+</body>
+</html>
