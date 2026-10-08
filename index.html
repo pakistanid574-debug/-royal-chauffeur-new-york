@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Chauffeur New York | Elite Luxury Car Service & NYC Transfers</title>
+    <meta name="description" content="Experience New York with Royal Chauffeur. Premier luxury car service, airport transfers, and private executive tours across Manhattan landmarks. Book your elite ride today.">
+    <meta name="keywords" content="Royal Chauffeur New York, NYC private chauffeur, luxury car service Manhattan, JFK airport transfer chauffeur, NYC landmarks tour">
+    <link rel="canonical" href="https://royalchauffeurnewyork.com/">
+    
+    <!-- Bing Webmaster Verification Tag -->
+    <meta name="msvalidate.01" content="A6A46AD1617FF4E26F63939141BE4B17">
+    
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://royalchauffeurnewyork.com/">
+    <meta property="og:title" content="Royal Chauffeur New York | Luxury Car Service">
+    <meta property="og:description" content="Immaculate luxury vehicles, elite private drivers, and executive tours across Manhattan landmarks, JFK, LGA, and EWR.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1485081669461-b36c9529696e?q=80&w=1200&auto=format&fit=crop">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LimousineService",
+      "name": "Royal Chauffeur New York",
+      "image": "https://images.unsplash.com/photo-1485081669461-b36c9529696e",
+      "url": "https://royalchauffeurnewyork.com/",
+      "email": "royalchauffeurnewyork@gmail.com",
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "addressCountry": "US"
+      },
+      "areaServed": ["Manhattan", "New York City", "Times Square", "Central Park", "JFK Airport", "LaGuardia Airport", "Newark Airport"]
+    }
+    </script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        'gold-light': '#F3E5AB',
+                        'gold-dark': '#AA8C2C',
+                        dark: '#070707',
+                        'dark-card': '#111111',
+                        'dark-border': '#222222'
+                    },
+                    fontFamily: {
+                        playfair: ['Playfair Display', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark text-gray-200 font-sans antialiased selection:bg-gold selection:text-black">
+
+    <!-- Top Luxury Announcement Bar -->
+    <div class="bg-gold text-black text-[11px] font-bold tracking-widest uppercase py-2 text-center px-4 flex items-center justify-center gap-2">
+        <span>✨ Exclusive NYC Fleet Available</span>
+        <span class="hidden md:inline">•</span>
+        <span class="hidden md:inline">24/7 Flight Tracking & Concierge</span>
+        <span class="hidden md:inline">•</span>
+        <a href="mailto:royalchauffeurnewyork@gmail.com" class="underline hover:text-white transition">Book via Concierge</a>
+    </div>
+
+    <!-- Header / Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-dark/95 backdrop-blur-md border-b border-dark-border">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" onclick="switchTab('home')" class="font-playfair text-xl md:text-2xl font-bold tracking-wider text-gold uppercase group">
+                Royal Chauffeur <span class="text-white font-light text-xs block tracking-widest group-hover:text-gold transition">New York</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-xs font-semibold tracking-widest uppercase">
+                <button onclick="switchTab('home')" class="nav-link text-gold transition hover:text-gold-light py-2 border-b-2 border-gold" id="nav-home">Home</button>
+                <button onclick="switchTab('fleet')" class="nav-link text-gray-400 transition hover:text-gold py-2 border-b-2 border-transparent" id="nav-fleet">Fleet & Services</button>
+                <button onclick="switchTab('landmarks')" class="nav-link text-gray-400 transition hover:text-gold py-2 border-b-2 border-transparent" id="nav-landmarks">NYC Landmarks</button>
+                <button onclick="switchTab('about')" class="nav-link text-gray-400 transition hover:text-gold py-2 border-b-2 border-transparent" id="nav-about">The Experience</button>
+                <button onclick="switchTab('blog')" class="nav-link text-gray-400 transition hover:text-gold py-2 border-b-2 border-transparent" id="nav-blog">Journal</button>
+                <button onclick="switchTab('contact')" class="nav-link text-gray-400 transition hover:text-gold py-2 border-b-2 border-transparent" id="nav-contact">Contact</button>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <button onclick="switchTab('contact')" class="hidden sm:inline-block bg-gradient-to-r from-gold to-gold-dark hover:from-gold-light hover:to-gold text-black font-bold px-6 py-3 rounded text-xs uppercase tracking-widest transition shadow-lg shadow-gold/20 transform hover:-translate-y-0.5">
+                    Reserve Now
+                </button>
+                <button onclick="toggleMobileMenu()" class="md:hidden text-gold focus:outline-none p-2">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-dark-card border-b border-dark-border px-6 py-5 space-y-4 shadow-2xl">
+            <button onclick="switchTab('home'); toggleMobileMenu();" class="block w-full text-left py-2 text-gold font-bold uppercase text-xs tracking-widest">Home</button>
+            <button onclick="switchTab('fleet'); toggleMobileMenu();" class="block w-full text-left py-2 text-gray-300 font-bold uppercase text-xs tracking-widest">Fleet & Services</button>
+            <button onclick="switchTab('landmarks'); toggleMobileMenu();" class="block w-full text-left py-2 text-gray-300 font-bold uppercase text-xs tracking-widest">NYC Landmarks</button>
+            <button onclick="switchTab('about'); toggleMobileMenu();" class="block w-full text-left py-2 text-gray-300 font-bold uppercase text-xs tracking-widest">The Experience</button>
+            <button onclick="switchTab('blog'); toggleMobileMenu();" class="block w-full text-left py-2 text-gray-300 font-bold uppercase text-xs tracking-widest">Journal</button>
+            <button onclick="switchTab('contact'); toggleMobileMenu();" class="block w-full text-left py-2 text-gray-300 font-bold uppercase text-xs tracking-widest">Contact</button>
+            <button onclick="switchTab('contact'); toggleMobileMenu();" class="w-full bg-gold text-black font-bold py-3 rounded text-xs uppercase tracking-widest mt-2">Reserve Ride</button>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main>
+
+        <!-- 1. HOME TAB -->
+        <section id="tab-home" class="tab-content">
+            <!-- Hero Section -->
+            <div class="relative h-[90vh] flex items-center justify-center text-center px-6 bg-cover bg-center" style="background-image: linear-gradient(to bottom, rgba(7,7,7,0.5), rgba(7,7,7,0.92)), url('https://images.unsplash.com/photo-1485081669461-b36c9529696e?q=80&w=2670&auto=format&fit=crop');">
+                <div class="max-w-4xl mx-auto space-y-6">
+                    <span class="text-gold uppercase tracking-[0.35em] text-xs font-bold bg-gold/10 px-5 py-2 rounded-full border border-gold/30 inline-block shadow-lg">New York’s Premier Chauffeur Service</span>
+                    <h1 class="font-playfair text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white leading-[1.1]">
+                        Uncompromising Luxury <span class="text-gold block mt-2">Across Manhattan</span>
+                    </h1>
+                    <p class="text-gray-300 text-base md:text-xl max-w-2xl mx-auto font-light leading-relaxed">
+                        Elevate your journey with pristine S-Class Mercedes, elite private drivers, and flawless <button onclick="switchTab('fleet')" class="text-gold underline hover:text-gold-light font-medium">airport transfers</button> & <button onclick="switchTab('landmarks')" class="text-gold underline hover:text-gold-light font-medium">landmark tours</button>.
+                    </p>
+                    <div class="pt-6 flex flex-col sm:flex-row justify-center gap-4">
+                        <button onclick="switchTab('contact')" class="bg-gradient-to-r from-gold to-gold-dark hover:from-gold-light hover:to-gold text-black font-bold px-9 py-4 rounded text-xs uppercase tracking-[0.2em] transition shadow-2xl shadow-gold/30 transform hover:-translate-y-1">
+                            Book Your Ride Now
+                        </button>
+                        <button onclick="switchTab('landmarks')" class="border border-gold/40 hover:bg-gold/10 text-white font-semibold px-9 py-4 rounded text-xs uppercase tracking-[0.2em] transition backdrop-blur-sm">
+                            Explore NYC Landmarks
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trust Bar / Quick Stats -->
+            <div class="bg-dark-card border-y border-dark-border py-10 px-6">
+                <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div class="space-y-1">
+                        <div class="font-playfair text-3xl md:text-4xl font-bold text-gold">100%</div>
+                        <div class="text-gray-400 text-xs uppercase tracking-wider">Flight Monitoring</div>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="font-playfair text-3xl md:text-4xl font-bold text-gold">24/7</div>
+                        <div class="text-gray-400 text-xs uppercase tracking-wider">Concierge Support</div>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="font-playfair text-3xl md:text-4xl font-bold text-gold">VIP</div>
+                        <div class="text-gray-400 text-xs uppercase tracking-wider">Discretion & Safety</div>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="font-playfair text-3xl md:text-4xl font-bold text-gold">JFK, LGA, EWR</div>
+                        <div class="text-gray-400 text-xs uppercase tracking-wider">Airport Transfers</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Why Choose Royal Standard -->
+            <div class="max-w-7xl mx-auto px-6 py-28">
+                <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                    <span class="text-gold text-xs font-bold uppercase tracking-[0.25em]">Unmatched Excellence</span>
+                    <h2 class="font-playfair text-3xl md:text-4xl font-bold text-white">Designed for Leaders & Connoisseurs</h2>
+                    <p class="text-gray-400 text-sm">Every detail is tailored to provide absolute peace of mind and pristine comfort.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-dark-card border border-dark-border p-8 rounded-2xl hover:border-gold/50 transition duration-300 group">
+                        <div class="w-14 h-14 bg-gold/10 rounded-xl flex items-center justify-center text-gold mb-6 font-bold text-xl group-hover:bg-gold group-hover:text-black transition">01</div>
+                        <h3 class="font-playfair text-xl font-bold text-white mb-3">Landmark & City Tours</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-4">Tour Times Square, Central Park, and Manhattan highlights in absolute luxury. Visit our <button onclick="switchTab('landmarks')" class="text-gold underline font-medium">NYC Landmarks page</button> to plan your route.</p>
+                    </div>
+                    <div class="bg-dark-card border border-dark-border p-8 rounded-2xl hover:border-gold/50 transition duration-300 group">
+                        <div class="w-14 h-14 bg-gold/10 rounded-xl flex items-center justify-center text-gold mb-6 font-bold text-xl group-hover:bg-gold group-hover:text-black transition">02</div>
+                        <h3 class="font-playfair text-xl font-bold text-white mb-3">Absolute Discretion</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-4">Professionally vetted chauffeurs committed to strict confidentiality and executive security. Learn <button onclick="switchTab('about')" class="text-gold underline font-medium">about our standards</button>.</p>
+                    </div>
+                    <div class="bg-dark-card border border-dark-border p-8 rounded-2xl hover:border-gold/50 transition duration-300 group">
+                        <div class="w-14 h-14 bg-gold/10 rounded-xl flex items-center justify-center text-gold mb-6 font-bold text-xl group-hover:bg-gold group-hover:text-black transition">03</div>
+                        <h3 class="font-playfair text-xl font-bold text-white mb-3">Immaculate Fleet</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-4">Late-model Mercedes S-Class, Cadillac Escalades, and Sprinters. Review vehicle specs on our <button onclick="switchTab('fleet')" class="text-gold underline font-medium">Fleet page</button>.</p>
+                    </div>
+                </div>
+
+                <!-- Urgency / Action Banner -->
+                <div class="mt-20 bg-gradient-to-r from-dark-card via-dark-border to-dark-card border border-gold/40 rounded-3xl p-10 md:p-14 text-center space-y-6 shadow-2xl">
+                    <span class="text-gold text-xs font-bold uppercase tracking-[0.25em]">Secure Your Vehicle Today</span>
+                    <h3 class="font-playfair text-3xl md:text-4xl font-bold text-white">Ready for a First-Class New York Experience?</h3>
+                    <p class="text-gray-300 text-sm max-w-xl mx-auto">Skip the unpredictable rideshare apps. Enjoy guaranteed punctuality and red-carpet executive treatment across all five boroughs.</p>
+                    <div class="pt-2">
+                        <button onclick="switchTab('contact')" class="bg-gold hover:bg-gold-light text-black font-bold px-10 py-4 rounded text-xs uppercase tracking-[0.2em] transition shadow-xl shadow-gold/20">
+                            Book Your Chauffeur Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. FLEET & SERVICES TAB -->
+        <section id="tab-fleet" class="tab-content hidden">
+            <div class="max-w-7xl mx-auto px-6 py-24">
+                <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                    <span class="text-gold text-xs font-bold uppercase tracking-[0.25em]">Elite Automobile Selection</span>
+                    <h2 class="font-playfair text-3xl md:text-4xl font-bold text-white">Our Luxury Fleet & Services</h2>
+                    <p class="text-gray-400 text-sm">Maintained to showroom perfection for corporate travel, airport arrivals, and private tours.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+                    <div class="bg-dark-card border border-dark-border rounded-2xl overflow-hidden group hover:border-gold/50 transition duration-300 flex flex-col justify-between">
+                        <div>
+                            <div class="h-60 overflow-hidden relative">
+                                <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=800&auto=format&fit=crop" alt="Mercedes-Benz S-Class" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                                <div class="absolute top-4 right-4 bg-dark/80 backdrop-blur-md px-3 py-1 rounded text-xs text-gold uppercase tracking-wider font-semibold">Max 3 Pax</div>
+                            </div>
+                            <div class="p-8 space-y-3">
+                                <h3 class="font-playfair text-2xl font-bold text-white">Mercedes-Benz S-Class</h3>
+                                <p class="text-gray-400 text-xs leading-relaxed">The gold standard in executive comfort. Unmatched legroom, panoramic roof, and whisper-quiet cabin. Perfect for <button onclick="switchTab('landmarks')" class="text-gold underline font-medium">Manhattan landmark tours</button>.</p>
+                            </div>
+                        </div>
+                        <div class="p-8 pt-0">
+                            <button onclick="switchTab('contact')" class="w-full bg-dark-border hover:bg-gold hover:text-black text-gold font-bold py-3.5 rounded text-xs uppercase tracking-widest transition">Reserve S-Class</button>
+                        </div>
+                    </div>
+
+                    <div class="bg-dark-card border border-dark-border rounded-2xl overflow-hidden group hover:border-gold/50 transition duration-300 flex flex-col justify-between">
+                        <div>
+                            <div class="h-60 overflow-hidden relative">
+                                <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=800&auto=format&fit=crop" alt="Cadillac Escalade ESV" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                                <div class="absolute top-4 right-4 bg-dark/80 backdrop-blur-md px-3 py-1 rounded text-xs text-gold uppercase tracking-wider font-semibold">Max 6 Pax</div>
+                            </div>
+                            <div class="p-8 space-y-3">
+                                <h3 class="font-playfair text-2xl font-bold text-white">Cadillac Escalade ESV</h3>
+                                <p class="text-gray-400 text-xs leading-relaxed">Supreme road presence and cavernous luggage capacity. Ideal for JFK airport transfers with heavy luggage and executive family tours.</p>
+                            </div>
+                        </div>
+                        <div class="p-8 pt-0">
+                            <button onclick="switchTab('contact')" class="w-full bg-dark-border hover:bg-gold hover:text-black text-gold font-bold py-3.5 rounded text-xs uppercase tracking-widest transition">Reserve Escalade</button>
+                        </div>
+                    </div>
+
+                    <div class="bg-dark-card border border-dark-border rounded-2xl overflow-hidden group hover:border-gold/50 transition duration-300 flex flex-col justify-between">
+                        <div>
+                            <div class="h-60 overflow-hidden relative">
+                                <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?q=80&w=800&auto=format&fit=crop" alt="Mercedes Sprinter Van" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                                <div class="absolute top-4 right-4 bg-dark/80 backdrop-blur-md px-3 py-1 rounded text-xs text-gold uppercase tracking-wider font-semibold">Max 14 Pax</div>
+                            </div>
+                            <div class="p-8 space-y-3">
+                                <h3 class="font-playfair text-2xl font-bold text-white">Mercedes Sprinter Van</h3>
+                                <p class="text-gray-400 text-xs leading-relaxed">First-class seating configuration for corporate teams, delegations, and VIP group excursions across New York City.</p>
+                            </div>
+                        </div>
+                        <div class="p-8 pt-0">
+                            <button onclick="switchTab('contact')" class="w-full bg-dark-border hover:bg-gold hover:text-black text-gold font-bold py-3.5 rounded text-xs uppercase tracking-widest transition">Reserve Sprinter</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. NYC LANDMARKS TAB -->
+        <section id="tab-landmarks" class="tab-content hidden">
+            <div class="max-w-7xl mx-auto px-6 py-24">
+                <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                    <span class="text-gold text-xs font-bold uppercase tracking-[0.25em]">Iconic Sightseeing</span>
+                    <h2 class="font-playfair text-3xl md:text-4xl font-bold text-white">Explore NYC Landmarks in Ultimate Comfort</h2>
+                    <p class="text-gray-400 text-sm">Customize your hourly disposal package to tour New York's legendary sights with priority drop-offs.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                    <div class="bg-dark-card border border-dark-border rounded-2xl overflow-hidden group flex flex-col justify-between">
+                        <div class="h-56 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1534430480872-3498386e7856?q=80&w=800&auto=format&fit=crop" alt="Times Square" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute top-3 left-3 bg-dark/80 backdrop-blur-md px-3 py-1 rounded text-xs text-gold uppercase font-semibold">Midtown Manhattan</div>
+                        </div>
+                        <div class="p-7 space-y-3">
+                            <h3 class="font-playfair text-xl font-bold text-white">Times Square & Broadway</h3>
+                            <p class="text-gray-400 text-xs leading-relaxed">Experience the glowing neon heart of NYC. Plan visits via <a href="https://www.timessquarenyc.org/" target="_blank" rel="noopener noreferrer" class="text-gold underline">Times Square Alliance</a>.</p>
+                            <button onclick="openLandmarkModal('Times Square & Broadway', 'Midtown Manhattan', 'Enjoy the pulsating energy of Broadway theaters with our exclusive curbside drop-off service.')" class="text-gold text-xs font-bold uppercase tracking-wider hover:underline pt-2 inline-block">View Chauffeur Package &rarr;</button>
+                        </div>
+                    </div>
+
+                    <div class="bg-dark-card border border-dark-border rounded-2xl overflow-hidden group flex flex-col justify-between">
+                        <div class="h-56 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?q=80&w=800&auto=format&fit=crop" alt="Central Park" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute top-3 left-3 bg-dark/80 backdrop-blur-md px-3 py-1 rounded text-xs text-gold uppercase font-semibold">Upper Manhattan</div>
+                        </div>
+                        <div class="p-7 space-y-3">
+                            <h3 class="font-playfair text-xl font-bold text-white">Central Park Scenic Drive</h3>
+                            <p class="text-gray-400 text-xs leading-relaxed">Tour 843 acres of pristine greenery. Check guidelines via <a href="https://www.centralparknyc.org/" target="_blank" rel="noopener noreferrer" class="text-gold underline">Central Park Conservancy</a>.</p>
+                            <button onclick="openLandmarkModal('Central Park Scenic Drive', 'Upper Manhattan', 'Relax in an S-Class while touring the scenic perimeter of Central Park with a dedicated driver.')" class="text-gold text-xs font-bold uppercase tracking-wider hover:underline pt-2 inline-block">View Chauffeur Package &rarr;</button>
+                        </div>
+                    </div>
+
+                    <div class="bg-dark-card border border-dark-border rounded-2xl overflow-hidden group flex flex-col justify-between">
+                        <div class="h-56 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=800&auto=format&fit=crop" alt="Statue of Liberty" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute top-3 left-3 bg-dark/80 backdrop-blur-md px-3 py-1 rounded text-xs text-gold uppercase font-semibold">Lower Manhattan</div>
+                        </div>
+                        <div class="p-7 space-y-3">
+                            <h3 class="font-playfair text-xl font-bold text-white">Statue of Liberty & Battery Park</h3>
+                            <p class="text-gray-400 text-xs leading-relaxed">Direct executive transfer to ferry terminals. Book monument visits via <a href="https://www.nps.gov/stli/index.htm" target="_blank" rel="noopener noreferrer" class="text-gold underline">National Park Service</a>.</p>
+                            <button onclick="openLandmarkModal('Statue of Liberty & Battery Park', 'Lower Manhattan', 'Seamless point-to-point luxury transfers straight to the Battery Park ferry departure point.')" class="text-gold text-xs font-bold uppercase tracking-wider hover:underline pt-2 inline-block">View Chauffeur Package &rarr;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. ABOUT TAB -->
+        <section id="tab-about" class="tab-content hidden">
+            <div class="max-w-7xl mx-auto px-6 py-24">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                        <span class="text-gold text-xs font-bold uppercase tracking-[0.25em]">Our Philosophy</span>
+                        <h2 class="font-playfair text-3xl md:text-5xl font-bold text-white leading-tight">The Pinnacle of NYC Executive Mobility</h2>
+                        <p class="text-gray-300 text-sm md:text-base leading-relaxed">
+                            At <strong class="text-gold">Royal Chauffeur New York</strong>, we believe travel should be seamless, private, and breathtaking. Whether you are arriving at JFK, heading to Wall Street, or touring <button onclick="switchTab('landmarks')" class="text-gold underline font-medium">Manhattan landmarks</button>, our concierge team ensures perfection.
+                        </p>
+                        <div class="pt-4">
+                            <button onclick="switchTab('contact')" class="bg-gold hover:bg-gold-light text-black font-bold px-8 py-4 rounded text-xs uppercase tracking-[0.2em] transition">
+                                Speak With Our Concierge
+                            </button>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=1000&auto=format&fit=crop" alt="Royal Chauffeur Experience" class="rounded-2xl border border-gold/30 shadow-2xl w-full h-[450px] object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. BLOG TAB -->
+        <section id="tab-blog" class="tab-content hidden">
+            <div class="max-w-7xl mx-auto px-6 py-24">
+                <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                    <span class="text-gold text-xs font-bold uppercase tracking-[0.25em]">Executive Insights</span>
+                    <h2 class="font-playfair text-3xl md:text-4xl font-bold text-white">NYC Travel & Chauffeur Journal</h2>
+                    <p class="text-gray-400 text-sm">Expert tips on airport transfers, navigating traffic, and Manhattan highlights.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <article class="bg-dark-card border border-dark-border rounded-2xl overflow-hidden flex flex-col justify-between p-8">
+                        <div class="space-y-4">
+                            <span class="text-xs text-gold font-bold uppercase tracking-widest">Airport Guide</span>
+                            <h3 class="font-playfair text-xl font-bold text-white">JFK Airport Transfer: Beating Peak NYC Traffic</h3>
+                            <p class="text-gray-400 text-xs leading-relaxed">How professional chauffeurs track live flights and navigate terminal congestion. Check live stats via <a href="https://www.jfkairport.com/" target="_blank" rel="noopener noreferrer" class="text-gold underline">JFK Airport Official Site</a>.</p>
+                        </div>
+                        <div class="pt-6">
+                            <button onclick="openBlogModal('JFK Airport Transfer: Beating Peak NYC Traffic', 'Navigating JFK during peak hours requires real-time flight tracking and expert local navigation by experienced chauffeurs.')" class="text-gold text-xs font-bold uppercase tracking-wider hover:underline">Read Full Article &rarr;</button>
+                        </div>
+                    </article>
+
+                    <article class="bg-dark-card border border-dark-border rounded-2xl overflow-hidden flex flex-col justify-between p-8">
+                        <div class="space-y-4">
+                            <span class="text-xs text-gold font-bold uppercase tracking-widest">Manhattan Lifestyle</span>
+                            <h3 class="font-playfair text-xl font-bold text-white">Top 5 Luxury Dining Spots in Manhattan</h3>
+                            <p class="text-gray-400 text-xs leading-relaxed">Discover Michelin-starred restaurants best visited with our <button onclick="switchTab('fleet')" class="text-gold underline font-medium">hourly chauffeur service</button>.</p>
+                        </div>
+                        <div class="pt-6">
+                            <button onclick="openBlogModal('Top 5 Luxury Dining Spots in Manhattan', 'Manhattan hosts world-class culinary destinations. Arriving with Royal Chauffeur New York ensures absolute elegance.')" class="text-gold text-xs font-bold uppercase tracking-wider hover:underline">Read Full Article &rarr;</button>
+                        </div>
+                    </article>
+
+                    <article class="bg-dark-card border border-dark-border rounded-2xl overflow-hidden flex flex-col justify-between p-8">
+                        <div class="space-y-4">
+                            <span class="text-xs text-gold font-bold uppercase tracking-widest">Executive Travel</span>
+                            <h3 class="font-playfair text-xl font-bold text-white">Why Modern Executives Prefer Private Chauffeurs</h3>
+                            <p class="text-gray-400 text-xs leading-relaxed">Maximize your productivity and travel across New York without worrying about parking or navigation.</p>
+                        </div>
+                        <div class="pt-6">
+                            <button onclick="openBlogModal('Why Modern Executives Prefer Private Chauffeurs', 'In a fast-paced financial capital like New York, time is your most valuable asset. Corporate leaders choose Royal Chauffeur.')" class="text-gold text-xs font-bold uppercase tracking-wider hover:underline">Read Full Article &rarr;</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. CONTACT TAB (Advanced Ultra-Detailed Booking Form) -->
+        <section id="tab-contact" class="tab-content hidden">
+            <div class="max-w-4xl mx-auto px-6 py-24">
+                <div class="bg-dark-card border border-gold/40 rounded-3xl p-8 md:p-14 shadow-2xl relative overflow-hidden">
+                    <div class="text-center max-w-xl mx-auto mb-12 space-y-3">
+                        <span class="text-gold text-xs font-bold uppercase tracking-[0.25em]">Instant Reservation Desk</span>
+                        <h2 class="font-playfair text-3xl md:text-4xl font-bold text-white">Book Your Private Ride</h2>
+                        <p class="text-gray-400 text-sm">Please provide your trip details below so our concierge can instantly secure your vehicle and chauffeur.</p>
+                    </div>
+
+                    <!-- Direct Email Box -->
+                    <div class="bg-dark border border-dark-border rounded-2xl p-6 mb-10 text-center space-y-2">
+                        <span class="text-xs text-gray-400 uppercase tracking-widest block font-medium">Direct Concierge Assistance</span>
+                        <a href="mailto:royalchauffeurnewyork@gmail.com" class="font-playfair text-xl md:text-2xl font-bold text-gold hover:underline">royalchauffeurnewyork@gmail.com</a>
+                    </div>
+
+                    <!-- Advanced Web3Forms Booking Form -->
+                    <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+                        <input type="hidden" name="apikey" value="b4b06206-ee82-4f68-9f0e-235d682d191a">
+                        <input type="hidden" name="subject" value="New Detailed Booking Inquiry - Royal Chauffeur NYC">
+                        <input type="hidden" name="from_name" value="Royal Chauffeur Website">
+
+                        <!-- Row 1: Personal Details -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2 font-bold">Full Name *</label>
+                                <input type="text" name="name" required placeholder="John Doe" class="w-full bg-dark border border-dark-border rounded-xl px-5 py-4 text-sm text-white focus:outline-none focus:border-gold transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2 font-bold">Email Address *</label>
+                                <input type="email" name="email" required placeholder="client@example.com" class="w-full bg-dark border border-dark-border rounded-xl px-5 py-4 text-sm text-white focus:outline-none focus:border-gold transition">
+                            </div>
+                        </div>
+
+                        <!-- Row 2: Contact Phone & Service Type -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2 font-bold">Phone / WhatsApp Number *</label>
+                                <input type="tel" name="phone" required placeholder="+1 (555) 019-2834" class="w-full bg-dark border border-dark-border rounded-xl px-5 py-4 text-sm text-white focus:outline-none focus:border-gold transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2 font-bold">Service Type *</label>
+                                <select name="service_type" class="w-full bg-dark border border-dark-border rounded-xl px-5 py-4 text-sm text-white focus:outline-none focus:border-gold transition">
+                                    <option value="Airport Transfer (JFK / LGA / EWR)">Airport Transfer (JFK / LGA / EWR)</option>
+                                    <option value="Hourly Disposal / As Directed">Hourly Disposal / As Directed</option>
+                                    <option value="Manhattan Landmark Tour">Manhattan Landmark Tour</option>
+                                    <option value="Corporate Executive Transfer">Corporate Executive Transfer</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Row 3: Pickup & Dropoff Locations -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2 font-bold">Pickup Location / Terminal *</label>
+                                <input type="text" name="pickup_location" required placeholder="e.g. JFK Terminal 4 or The Plaza Hotel" class="w-full bg-dark border border-dark-border rounded-xl px-5 py-4 text-sm text-white focus:outline-none focus:border-gold transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2 font-bold">Drop-off Destination *</label>
+                                <input type="text" name="dropoff_location" required placeholder="e.g. Wall Street or Times Square" class="w-full bg-dark border border-dark-border rounded-xl px-5 py-4 text-sm text-white focus:outline-none focus:border-gold transition">
+                            </div>
+                        </div>
+
+                        <!-- Row 4: Date, Time & Vehicle Choice -->
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2 font-bold">Pickup Date *</label>
+                                <input type="date" name="pickup_date" required class="w-full bg-dark border border-dark-border rounded-xl px-5 py-4 text-sm text-white focus:outline-none focus:border-gold transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2 font-bold">Pickup Time *</label>
+                                <input type="time" name="pickup_time" required class="w-full bg-dark border border-dark-border rounded-xl px-5 py-4 text-sm text-white focus:outline-none focus:border-gold transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2 font-bold">Vehicle Selection *</label>
+                                <select name="vehicle_preference" class="w-full bg-dark border border-dark-border rounded-xl px-5 py-4 text-sm text-white focus:outline-none focus:border-gold transition">
+                                    <option value="Mercedes-Benz S-Class">Mercedes-Benz S-Class (Max 3 Pax)</option>
+                                    <option value="Cadillac Escalade ESV">Cadillac Escalade ESV (Max 6 Pax)</option>
+                                    <option value="Mercedes Sprinter Van">Mercedes Sprinter Van (Max 14 Pax)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Row 5: Flight Number, Passengers & Luggage -->
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2 font-bold">Flight Number (If Airport)</label>
+                                <input type="text" name="flight_number" placeholder="e.g. DL405 or BA177" class="w-full bg-dark border border-dark-border rounded-xl px-5 py-4 text-sm text-white focus:outline-none focus:border-gold transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2 font-bold">Number of Passengers</label>
+                                <select name="passengers_count" class="w-full bg-dark border border-dark-border rounded-xl px-5 py-4 text-sm text-white focus:outline-none focus:border-gold transition">
+                                    <option value="1-2 Passengers">1 - 2 Passengers</option>
+                                    <option value="3 Passengers">3 Passengers</option>
+                                    <option value="4-6 Passengers">4 - 6 Passengers</option>
+                                    <option value="7+ Passengers">7+ Passengers (Sprinter)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2 font-bold">Luggage Bags Count</label>
+                                <select name="luggage_count" class="w-full bg-dark border border-dark-border rounded-xl px-5 py-4 text-sm text-white focus:outline-none focus:border-gold transition">
+                                    <option value="1-2 Bags">1 - 2 Bags</option>
+                                    <option value="3-4 Bags">3 - 4 Bags</option>
+                                    <option value="5+ Bags">5+ Bags (Heavy Luggage)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Row 6: Special Instructions -->
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2 font-bold">Special Instructions / Child Seat Request</label>
+                            <textarea name="message" rows="3" placeholder="Mention child seat requirement, extra stops, or specific meet & greet instructions..." class="w-full bg-dark border border-dark-border rounded-xl px-5 py-4 text-sm text-white focus:outline-none focus:border-gold transition"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-gradient-to-r from-gold to-gold-dark hover:from-gold-light hover:to-gold text-black font-bold py-4 rounded-xl text-xs uppercase tracking-[0.2em] transition shadow-2xl shadow-gold/25">
+                            Submit Complete Booking Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Modals -->
+    <div id="landmark-modal" class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-sm flex items-center justify-center p-6">
+        <div class="bg-dark-card border border-gold/40 rounded-3xl max-w-xl w-full p-8 relative space-y-4 shadow-2xl">
+            <button onclick="closeLandmarkModal()" class="absolute top-5 right-5 text-gray-400 hover:text-white text-2xl font-bold">&times;</button>
+            <span id="modal-landmark-location" class="text-xs text-gold uppercase font-bold tracking-widest">Location</span>
+            <h3 id="modal-landmark-title" class="font-playfair text-2xl font-bold text-white"></h3>
+            <p id="modal-landmark-body" class="text-gray-300 text-sm leading-relaxed"></p>
+            <div class="pt-4 flex justify-end gap-3">
+                <button onclick="closeLandmarkModal()" class="border border-dark-border text-gray-300 px-6 py-2.5 rounded text-xs uppercase tracking-wider hover:border-white transition">Close</button>
+                <button onclick="closeLandmarkModal(); switchTab('contact');" class="bg-gold text-black font-bold px-6 py-2.5 rounded text-xs uppercase tracking-wider hover:bg-gold-light transition">Book Tour Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="blog-modal" class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-sm flex items-center justify-center p-6">
+        <div class="bg-dark-card border border-gold/40 rounded-3xl max-w-2xl w-full p-8 relative space-y-4 shadow-2xl">
+            <button onclick="closeBlogModal()" class="absolute top-5 right-5 text-gray-400 hover:text-white text-2xl font-bold">&times;</button>
+            <h3 id="modal-blog-title" class="font-playfair text-2xl font-bold text-white"></h3>
+            <p id="modal-blog-body" class="text-gray-300 text-sm leading-relaxed"></p>
+            <div class="pt-4 flex justify-end">
+                <button onclick="closeBlogModal(); switchTab('contact');" class="bg-gold text-black font-bold px-6 py-2.5 rounded text-xs uppercase tracking-wider">Book Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark-card border-t border-dark-border py-14 px-6 text-center text-gray-400 text-xs space-y-4">
+        <div class="font-playfair text-gold text-xl tracking-wider uppercase font-bold">Royal Chauffeur New York</div>
+        <p>Concierge Email: <a href="mailto:royalchauffeurnewyork@gmail.com" class="text-white hover:text-gold underline">royalchauffeurnewyork@gmail.com</a></p>
+        <p>&copy; 2026 Royal Chauffeur New York. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function switchTab(tabId) {
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.classList.add('hidden'));
+            
+            const target = document.getElementById('tab-' + tabId);
+            if(target) target.classList.remove('hidden');
+            
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.classList.remove('text-gold', 'border-gold');
+                link.classList.add('text-gray-400', 'border-transparent');
+            });
+            
+            const activeNav = document.getElementById('nav-' + tabId);
+            if(activeNav) {
+                activeNav.classList.remove('text-gray-400', 'border-transparent');
+                activeNav.classList.add('text-gold', 'border-gold');
+            }
+            
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        function openLandmarkModal(title, location, body) {
+            document.getElementById('modal-landmark-title').innerText = title;
+            document.getElementById('modal-landmark-location').innerText = location;
+            document.getElementById('modal-landmark-body').innerText = body;
+            document.getElementById('landmark-modal').classList.remove('hidden');
+        }
+
+        function closeLandmarkModal() {
+            document.getElementById('landmark-modal').classList.add('hidden');
+        }
+
+        function openBlogModal(title, body) {
+            document.getElementById('modal-blog-title').innerText = title;
+            document.getElementById('modal-blog-body').innerText = body;
+            document.getElementById('blog-modal').classList.add('hidden');
+        }
+
+        function closeBlogModal() {
+            document.getElementById('blog-modal').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
